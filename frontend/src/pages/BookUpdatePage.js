@@ -21,7 +21,7 @@ const BookUpdatePage = () => {
       setDescription(result.data?.description);
     };
     fetchBook();
-  }, []);
+  }, [params]);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title || !author || !description) {

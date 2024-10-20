@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -13,7 +13,7 @@ const BookDetailPage = () => {
       setResult(result);
     };
     fetchBook();
-  }, []);
+  }, [params]);
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
